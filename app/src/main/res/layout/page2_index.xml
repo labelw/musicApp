@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/commend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>-->
+
+    <LinearLayout
+        android:id="@+id/commendlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="每日推荐"
+            android:textSize="25dp"
+
+            android:layout_weight="5"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right">
+            <Button
+                android:id="@+id/refreshButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/refresh"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<ListView
+    android:id="@+id/networkmusic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/commendlinear">
+</ListView>
+</RelativeLayout>
